@@ -311,9 +311,12 @@ button {
 
 .box-shadow,
 .box-shadow-hover:hover {
-    -webkit-box-shadow: 0 .2rem 2.8rem rgba(36, 36, 36, .1);
+    /* -webkit-box-shadow: 0 .2rem 2.8rem rgba(36, 36, 36, .1);
     -moz-box-shadow: 0 .2rem 2.8rem rgba(36, 36, 36, .1);
-    box-shadow: 0 .2rem 2.8rem rgba(36, 36, 36, .1)
+    box-shadow: 0 .2rem 2.8rem rgba(36, 36, 36, .1); */
+    -webkit-box-shadow:2px 2px 25px rgba(36, 36, 36, .3);
+    -moz-box-shadow:2px 2px 25px rgba(36, 36, 36, .3);
+    box-shadow: 2px 2px 25px rgba(36, 36, 36, .3);
 }
 
 .loaded .site-preloader-wrap {
@@ -1792,6 +1795,9 @@ button {
     background: url(../img/bg-dots.png) 0 0 repeat;
     z-index: -1
 }
+.blog-item{
+    width: 265px;
+}
 
 .blog-item .blog-thumb {
     position: relative
@@ -1824,11 +1830,17 @@ button {
 
 .blog-content {
     background-color: #f9fafa;
-    padding: 30px
+    padding: 20px;
 }
 
 .blog-content h3 {
-    line-height: 24px
+    line-height: 24px;
+    display: inline-block;
+    max-width: 230px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    word-wrap: normal;
 }
 
 .blog-content h3 a {
@@ -1849,14 +1861,19 @@ button {
     text-transform: uppercase;
     position: relative;
     padding-left: 30px;
-    transition: all 200ms linear 0ms
+    transition: all 200ms linear 0ms;
+   box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.76);
+    background: #AE8160;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 2px;
 }
 
 .blog-content .read-more:before {
-    background-color: #ff7607;
+    /* background-color: #ff7607; */
     position: absolute;
     content: "";
-    width: 20px;
+    /* width: 20px; */
     height: 2px;
     left: 0;
     top: calc(50% - 1px);
@@ -1864,8 +1881,9 @@ button {
 }
 
 .blog-content .read-more:hover {
-    color: #ff7607;
-    padding-left: 40px
+    /* color: #ff7607;
+    padding-left: 40px */
+    box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.76);
 }
 
 .blog-content .read-more:hover:before {
