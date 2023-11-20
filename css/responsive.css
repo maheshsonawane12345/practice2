@@ -1,4 +1,17 @@
-@media(max-width:1024px) {}
+@media(max-width:1024px) {
+    .blog-item{
+        width: 100%;
+    }
+    .blog-content h3 {
+        line-height: 24px;
+        display: inline-block;
+        max-width: 183px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        word-wrap: normal;
+    }
+}
 
 @media(max-width:992px) {
     .sm-padding {
@@ -60,6 +73,9 @@
 
     .cta-content h2 {
         font-size: 36px
+    }
+    .blog-item{
+        width: 100%;
     }
 }
 
@@ -193,6 +209,10 @@
 
     .project-single-content {
         padding-left: 0
+    }
+    .projects-carousel .owl-nav div {
+        background-color: rgba(0, 0, 0, .4);
+        color: #ddd;
     }
 }
 
