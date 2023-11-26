@@ -229,6 +229,9 @@
         margin: 0;
         height: 200px;
     }
+    .primary-header .header-logo {
+        max-width: 225px;
+    }
 }
 
 @media all and (max-width:580px) {
