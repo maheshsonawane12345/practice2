@@ -251,6 +251,9 @@
     .testi-item .fa-quote-right {
         display: none
     }
+    .primary-header .header-logo {
+        max-width: 210px !important;
+    }
 }
 
 @media all and (max-width:420px) {}
